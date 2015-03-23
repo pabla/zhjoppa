@@ -1,0 +1,4 @@
+<%= tag('img', src: @image, id: @image_id, alt: '') %>
+<%= text_field_tag(@field_name, nil, maxlength: @field_length) %>
+<br />
+<a href="javascript:void(0)" onclick="(function(){var k=Math.round(Math.random()*1000000).toString(36);var i=document.getElementById('<%= @image_id %>');i.src=i.src.replace(/\?t=\w+/,'?t='+k)})()">Change image</a>
